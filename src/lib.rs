@@ -32,7 +32,7 @@ impl zed::Extension for HlslLsExtension {
       .unwrap_or(USR_LOCAL_PATH.to_string());
     let lib_path = vulkan_sdk_path.to_string() + LIB_PART;
     let shader_ls_path = worktree
-      .which("shader-language-serve")
+      .which("shader-language-server")
       .ok_or(())
       .or_else(|_| {
         let cargo_home_path = env.get(CARGO_HOME_VAR).cloned().ok_or(()).or_else(|_| {
