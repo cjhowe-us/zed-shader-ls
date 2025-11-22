@@ -1,4 +1,5 @@
 # Shader Language Server for Zed
+
 > A Zed extension providing the Shader Language Server
 
 ## Installation
@@ -8,7 +9,7 @@ First, install the Shader Language Server:
 **Using Cargo**:
 
 ```
-cargo install shader-language-server
+cargo install shader_language_server
 ```
 
 **Using Mise**:
