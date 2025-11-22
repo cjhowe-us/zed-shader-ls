@@ -46,7 +46,7 @@ impl zed::Extension for HlslLsExtension {
             .cloned()
             .ok_or(())
             .unwrap_or(format!("/Users/{}", user));
-          Ok::<String, String>(home_path + CARGO_PATH_PART)
+          Ok::<String, String>(home_path + "/" + CARGO_PATH_PART)
         })?;
         Ok::<String, String>(String::from(cargo_home_path + BIN_PART + LS_PART))
       })?;
