@@ -5,6 +5,7 @@ description = "Shader validation, diagnostics and language features for HLSL, GL
 version = "0.2.0"
 authors = ["Christian Howe <christianjacobhowe@gmail.com>"]
 repository = "https://github.com/cjhowe-us/zed-shader-ls"
+license = "MIT"
 
 [language_servers.shader-language-server]
 name = "Shader Language Server"
