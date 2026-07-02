@@ -1,11 +1,23 @@
 schema_version = 1
 id = "shader-ls"
 name = "Shader Language Server"
-description = "Exposes Shader Language Server for HLSL and GLSL."
-version = "0.1.1"
+description = "Shader validation, diagnostics and language features for HLSL, GLSL and WGSL, powered by shader-language-server (antaalt/shader-sense)."
+version = "0.2.0"
 authors = ["Christian Howe <christianjacobhowe@gmail.com>"]
 repository = "https://github.com/cjhowe-us/zed-shader-ls"
 
 [language_servers.shader-language-server]
 name = "Shader Language Server"
-languages = ["HLSL", "GLSL"]
+languages = ["HLSL", "GLSL", "WGSL"]
+
+[grammars.hlsl]
+repository = "https://github.com/tree-sitter-grammars/tree-sitter-hlsl"
+rev = "bab9111922d53d43668fabb61869bec51bbcb915"
+
+[grammars.glsl]
+repository = "https://github.com/tree-sitter-grammars/tree-sitter-glsl"
+rev = "24a6c8ef698e4480fecf8340d771fbcb5de8fbb4"
+
+[grammars.wgsl]
+repository = "https://github.com/szebniok/tree-sitter-wgsl"
+rev = "40259f3c77ea856841a4e0c4c807705f3e4a2b65"
