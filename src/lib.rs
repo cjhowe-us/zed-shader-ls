@@ -2,7 +2,7 @@ use std::collections::HashMap;
 
 use zed_extension_api as zed;
 
-const CARGO_PATH_PART: &str = ".cargo";
+const CARGO_PATH_PART: &str = "/.cargo";
 const USR_LOCAL_PATH: &str = "/usr/local";
 const LIB_PART: &str = "/lib";
 const BIN_PART: &str = "/bin";
