@@ -11,15 +11,13 @@ features for **HLSL**, **GLSL** and **WGSL**, powered by
 - Document **formatting** (clang-format)
 - Preprocessor-aware analysis with custom includes, defines, and per-stage defines
 
-Syntax highlighting is provided by bundled Tree-sitter grammars for each language.
-
 ## Supported Languages & File Types
 
-| Language | Extensions |
-| -------- | ---------- |
-| HLSL | `.hlsl` `.hlsli` `.fx` `.fxh` `.ush` `.usf` |
-| GLSL | `.glsl` `.vert` `.frag` `.comp` `.geom` `.tesc` `.tese` `.mesh` `.task` |
-| WGSL | `.wgsl` |
+| Language | Extensions                                                              |
+| -------- | ----------------------------------------------------------------------- |
+| HLSL     | `.hlsl` `.hlsli` `.fx` `.fxh` `.ush` `.usf`                             |
+| GLSL     | `.glsl` `.vert` `.frag` `.comp` `.geom` `.tesc` `.tese` `.mesh` `.task` |
+| WGSL     | `.wgsl`                                                                 |
 
 ## Installation
 
@@ -131,8 +129,6 @@ When `arguments` is set the extension uses it verbatim, skipping the automatic
 - Language server: [antaalt](https://github.com/antaalt) —
   [shader-sense](https://github.com/antaalt/shader-sense),
   [shader-validator](https://github.com/antaalt/shader-validator).
-- Tree-sitter grammars: `tree-sitter-grammars/tree-sitter-glsl`,
-  `tree-sitter-grammars/tree-sitter-hlsl`, `szebniok/tree-sitter-wgsl`.
 
 ## License
 
